@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BFF4AF24-6A63-45B2-9C7C-2F924953C29C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.Export", "src\Elmah.Io.Export\Elmah.Io.Export.csproj", "{247E6323-51BF-42AE-BFFE-2F58EE8A7909}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{247E6323-51BF-42AE-BFFE-2F58EE8A7909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247E6323-51BF-42AE-BFFE-2F58EE8A7909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247E6323-51BF-42AE-BFFE-2F58EE8A7909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247E6323-51BF-42AE-BFFE-2F58EE8A7909}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{247E6323-51BF-42AE-BFFE-2F58EE8A7909} = {BFF4AF24-6A63-45B2-9C7C-2F924953C29C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF45D971-DA6A-45AE-8DE1-2FB659013D01}
+	EndGlobalSection
+EndGlobal
