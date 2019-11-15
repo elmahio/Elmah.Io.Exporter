@@ -115,13 +115,14 @@ namespace Elmah.Io.Export
 				filename = Path.Combine(Directory.GetCurrentDirectory().ToString(), $"Export-{ticks}.json");
 			}
 
-            var dateFrom = DateTime.MinValue;
+            var utcNow = DateTime.UtcNow;
+            var dateFrom = utcNow.AddDays(-91);
             if (!string.IsNullOrWhiteSpace(df) && !DateTime.TryParse(df, out dateFrom))
             {
                 throw new FormatException("The given -DateFrom was not a valid Date. Ex. \" -DateFrom 2017-10-24\"");
             }
 
-            var dateTo = DateTime.MaxValue;
+            var dateTo = utcNow.AddDays(1);
             if (!string.IsNullOrWhiteSpace(dt) && !DateTime.TryParse(dt, out dateTo))
 			{
 				throw new FormatException("The given -DateTo was not a valid Date. Ex. \" -DateTo 2017-11-30\"");
